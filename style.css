@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* ======= HEADER ======= */
+header {
+  display: flex;
+  justify-content: space-between; /* Itens alinhados à esquerda */
+  align-items: center;
+  padding: 10px 20px;
+  background: gainsboro;
+  border-color: #000000; 
+  border-style: solid;
+  border-left: 7px;
+  width: 98%;
+}
+
+.logo img {
+  height: 110px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: rgb(177, 21, 125);
+  margin-right: 20px;
+  border-width: 5px;
+}
+
+/* Botão menu (mobile) */
+#menu-btn {
+  background: none;
+  border: none;
+  color: rgb(53, 67, 192);
+  font-size: 70px;
+  cursor: pointer;
+  display: none; /* só aparece no mobile */
+}
+
+#menu {
+  height: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.list-menu {
+  color: #000000;
+  font-size:larger;
+}
+
+#inicio {
+  background-color: #6bb1f1;
+  color: rgb(46, 46, 48);
+  font-size: 160%;
+}
+
+#sobre {
+  background: rgb(215, 117, 235);
+}
+
+#servicos {
+  background: #6bb1f1;
+}
+
+#galeria {
+  background: #faed78;
+}
+
+#contato {
+  background: #6bb1f1;
+  border-color: #000000; 
+  border-style: solid;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: rgb(53, 67, 192);
+  text-decoration: underline;
+}
+
+/* ======= SEÇÕES ======= */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ImgGaleria {
+  height: 200px;
+  border-radius: 10%;
+}
+
+/*
+.galeria-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.galeria-container img {
+  width: 250px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+*/
+
+/* === FOOTER === */
+footer {
+  background-color: gainsboro;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* ===RESPONSIVO=== */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(223, 135, 245);
+    position: absolute;
+    top: 80px;
+    left: 0; /* canto esquerdo */
+    width: 200px;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .servicosImg {
+  padding: 0%;
+}
+}
+
+/*===Serviços===*/
+
+.servicos {
+  border-style: solid;
+  gap: 5%;
+  background: #ccc;
+  width: 610px;
+}  
+
+.servicosImg {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.ServicosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*===Contato===*/
+
+.WhatsContato {
+  background-color: green;
+  border-radius: 80px;
+  border-style: solid;
+  border-color: #302f2f;
+  width: 40%;
+}
+
+.WhatsContato:hover {
+  background: rgb(23, 179, 23);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.InstaContato {
+  background-color: rgb(156, 13, 149);
+  border-radius: 80px;
+  border-style: solid;
+  border-color: #302f2f;
+  width: 40%;
+}
+
+.InstaContato:hover {
+  background: rgb(210, 60, 230);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.LogoContato {
+  height: 50px;
+}
+
+/*===Localização===*/
+
+.localizacao {
+  text-decoration: none;
+  color: #2c2b2b;
+}
+
+.localizacao:hover {
+  text-decoration: underline;
+  color: #6d28d9;
+}
